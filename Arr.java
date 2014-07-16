@@ -33,7 +33,10 @@ public class Arr
 			else if(arr[i] == 0)
 			{
 				arr2[i] = 0;
-				arr2[i+1] = arr[i+1];
+				if(i != length-1)
+				{
+					arr2[i+1] = arr[i+1];
+				}
 				i = i + 1 ;
 			}
 			else
@@ -52,7 +55,10 @@ public class Arr
 			else if(arr[i] == 0)
 			{
 				arr[i] = 0;
-				arr[i-1] = arr[i-1];
+				if(i != 0)
+				{
+					arr[i-1] = arr[i-1];
+				}
 				i = i - 1 ;
 			}
 			else
